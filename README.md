@@ -1,3 +1,7 @@
+# GitDigital Products - Central Hub & Roadmap
+
+**Mission:** This is the central source of truth and CEO plan for the Gitdigital-products organization. It hosts the organizational roadmap, strategic decisions, and documents the primary revenue driver for our MVP. This repository is for internal alignment and stakeholder communication.
+
 ## 🗺️ Organizational Roadmap (PHASE 1 — CLARITY + CORE INFRA)
 
 **DECISION: Primary Revenue Driver MVP Selected.**
@@ -10,3 +14,16 @@
 1.  **Weeks 1-2 (Clarity):** Finalize repo missions, owner assignments, and GitHub Projects for all key repos. ✅ *[In Progress]*
 2.  **Weeks 2-4 (Core Infra):** Secure all CI/CD pipelines. Complete KYC SDK MVP feature spec and publish Project Board.
 3.  **Month 2 (Launch Prep):** KYC SDK pilot deployment with first partner. dNFT framework architecture finalized.
+
+### Next Steps:
+1.  Finalize and document the primary MVP choice in this section.
+2.  Create a GitHub Project linked to this repo to track organization-level epics.
+3.  Review and implement the standardized README missions across all repositories.
+
+## 🔗 Repository Missions
+Each business unit in our organization has a defined purpose:
+-   **LedgerX-repo:** `Accounting/Billing SaaS for B2B startups.`
+-   **solana-kyc-compliance-sdk:** `KYC/AML compliance SDK for Solana RWA token issuers.`
+-   **Dynamic-NFT-dNFT-Framework:** `Framework for creating dynamic, evolvable NFTs.`
+-   **GitDigial-api-gateway:** `Central API gateway for routing and managing our microservices.`
+-   **config-hub:** `Centralized configuration management server for all applications.`
