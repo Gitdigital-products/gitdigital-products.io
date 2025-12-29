@@ -16,7 +16,7 @@ Security is a feature. Transparency is non-negotiable. Systems matter more than 
 ---
 
 ## 🌐 Official Site
-https://gitdigital-products.io
+[https://gitdigital-products.io](https://gitdigital-products.github.io/gitdigital-products.io/)
 
 ---
 
