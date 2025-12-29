@@ -1,0 +1,69 @@
+/
+├── public/                     # Static assets (favicons, logos, images)
+│   ├── branding/
+│   ├── products/
+│   ├── governance/
+│   └── diagrams/
+│
+├── src/
+│   ├── pages/
+│   │   ├── index.md            # Home
+│   │   ├── products/
+│   │   │   ├── index.md        # Products overview
+│   │   │   ├── solana-kyc-sdk.md
+│   │   │   ├── hustlegpt.md
+│   │   │   ├── opengrantstack.md
+│   │   │   └── master-key.md
+│   │   │
+│   │   ├── docs/
+│   │   │   ├── index.md
+│   │   │   ├── architecture.md
+│   │   │   ├── api-reference.md
+│   │   │   ├── ci-cd.md
+│   │   │   └── compliance.md
+│   │   │
+│   │   ├── governance/
+│   │   │   ├── index.md
+│   │   │   ├── security.md
+│   │   │   ├── privacy.md
+│   │   │   ├── risk.md
+│   │   │   ├── incident-response.md
+│   │   │   ├── continuity.md
+│   │   │   ├── disaster-recovery.md
+│   │   │   ├── ethics.md
+│   │   │   ├── sustainability.md
+│   │   │   ├── diversity.md
+│   │   │   ├── innovation.md
+│   │   │   ├── improvement.md
+│   │   │   ├── vendor-management.md
+│   │   │   └── financial-controls.md
+│   │   │
+│   │   └── about.md
+│   │
+│   ├── components/             # Reusable UI components
+│   │   ├── NavBar.*
+│   │   ├── Footer.*
+│   │   ├── ProductCard.*
+│   │   ├── GovernanceCard.*
+│   │   ├── Hero.*
+│   │   └── Layout.*
+│   │
+│   ├── styles/                 # Global styles, themes
+│   │   ├── variables.css
+│   │   ├── global.css
+│   │   └── dark-mode.css
+│   │
+│   └── data/                   # Structured metadata
+│       ├── products.json
+│       ├── governance.json
+│       └── navigation.json
+│
+├── .github/
+│   ├── workflows/
+│   │   ├── deploy.yml          # GitHub Pages deployment
+│   │   ├── lint.yml
+│   │   └── link-check.yml
+│   └── ISSUE_TEMPLATE/
+│
+├── README.md
+└── LICENSE
