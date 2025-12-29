@@ -1,0 +1,33 @@
+import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import react from '@astrojs/react';
+
+// If you're deploying to GitHub Pages under a repo path,
+// set "base" to '/<repo-name>/'. If using a custom domain,
+// you can leave base: undefined.
+export default defineConfig({
+  site: 'https://gitdigital-products.github.io',
+  base: '/gitdigital-products.io/',
+
+  integrations: [
+    mdx(),          // Enables .mdx support
+    react(),        // Optional: enables React islands
+    sitemap(),      // Auto-generates sitemap.xml
+  ],
+
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark',
+      wrap: true,
+    },
+  },
+
+  vite: {
+    server: {
+      fs: {
+        strict: false,
+      },
+    },
+  },
+});
