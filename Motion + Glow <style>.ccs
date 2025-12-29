@@ -1,0 +1,51 @@
+/* ===== Motion + Glow ===== */
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+}
+
+/* Soft pulse */
+.badge {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 rgba(56,189,248,0); }
+  50% { box-shadow: 0 0 18px rgba(56,189,248,.35); }
+}
+
+/* Buttons */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(56,189,248,.6);
+}
+
+/* Cards */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--x,50%) var(--y,50%),
+    rgba(56,189,248,.15),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
