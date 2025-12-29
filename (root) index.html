@@ -1,27 +1,25 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GitDigital Products — Build, Ship, Verify</title>
-  <meta name="description" content="GitDigital Products builds open, verifiable software: SDKs, platforms, and tools for AI, blockchain, and compliance-first engineering." />
-  <meta name="theme-color" content="#0f172a" />  <!-- Open Graph -->  <meta property="og:title" content="GitDigital Products" />
-  <meta property="og:description" content="Build, Ship, Verify. Open platforms for AI, blockchain, and compliance." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://gitdigital-products.io" />  <!-- Fonts -->  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="description" content="Open infrastructure for AI, blockchain, and compliance-first software." />
+  <meta name="theme-color" content="#020617" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">  <style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
     :root {
       --bg: #020617;
-      --panel: #020617;
-      --panel-2: #020617;
       --text: #e5e7eb;
       --muted: #94a3b8;
       --brand: #38bdf8;
-      --brand-2: #22d3ee;
       --accent: #a78bfa;
       --border: #1e293b;
-      --success: #22c55e;
-      --warn: #f59e0b;
     }
 
     * { box-sizing: border-box; }
@@ -29,12 +27,20 @@
     html, body {
       margin: 0;
       padding: 0;
-      background: radial-gradient(1200px 600px at 20% -10%, #020617 0%, var(--bg) 60%),
-                  radial-gradient(800px 400px at 90% 10%, #020617 0%, var(--bg) 60%),
-                  var(--bg);
+      font-family: 'Inter', system-ui, sans-serif;
       color: var(--text);
-      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.6;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, #020617 0%, var(--bg) 60%),
+        radial-gradient(800px 400px at 90% 10%, #020617 0%, var(--bg) 60%),
+        var(--bg);
+      background-size: 200% 200%;
+      animation: gradientShift 22s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     a { color: inherit; text-decoration: none; }
@@ -45,29 +51,27 @@
       padding: 0 20px;
     }
 
-    /* Header */
     header {
       position: sticky;
       top: 0;
       z-index: 50;
       backdrop-filter: blur(12px);
-      background: rgba(2, 6, 23, 0.7);
+      background: rgba(2,6,23,.75);
       border-bottom: 1px solid var(--border);
     }
 
     .nav {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       height: 64px;
     }
 
     .brand {
       display: flex;
-      align-items: center;
       gap: 12px;
+      align-items: center;
       font-weight: 800;
-      letter-spacing: -0.02em;
     }
 
     .logo {
@@ -77,25 +81,263 @@
       background: linear-gradient(135deg, var(--brand), var(--accent));
       display: grid;
       place-items: center;
-      font-weight: 900;
       color: #020617;
+      font-weight: 900;
     }
 
     .nav-links {
       display: flex;
       gap: 24px;
-      font-weight: 500;
       color: var(--muted);
     }
 
-    .nav-links a:hover { color: var(--text); }
+    .nav-links a {
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--brand), var(--accent));
+      transition: width .25s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
 
     .cta {
       padding: 10px 16px;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      background: linear-gradient(135deg, var(--brand), var(--accent));
       color: #020617;
       font-weight: 700;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 560px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(56,189,248,.1);
+      color: var(--brand);
+      border: 1px solid rgba(56,189,248,.25);
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 rgba(56,189,248,0); }
+      50% { box-shadow: 0 0 18px rgba(56,189,248,.35); }
+    }
+
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #020617;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(56,189,248,.6);
+    }
+
+    .hero-card {
+      background: rgba(2,6,23,.9);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      font-family: monospace;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      background: rgba(2,6,23,.9);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+      transition: transform .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        600px circle at var(--x,50%) var(--y,50%),
+        rgba(56,189,248,.15),
+        transparent 40%
+      );
+      opacity: 0;
+      transition: opacity .3s ease;
+      pointer-events: none;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">GD</div>
+      GitDigital Products
+    </div>
+    <nav class="nav-links">
+      <a href="#platforms">Platforms</a>
+      <a href="#projects">Projects</a>
+      <a href="#principles">Principles</a>
+    </nav>
+    <a class="cta" href="https://github.com/gitdigital-products" target="_blank">GitHub</a>
+  </div>
+</header>
+
+<section class="reveal">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">Build • Ship • Verify</span>
+      <h1>Open infrastructure for serious systems.</h1>
+      <p>AI, blockchain, and compliance-first software built to survive reality.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">Explore Projects</a>
+      </div>
+    </div>
+    <div class="hero-card">
+<pre>$ git clone gitdigital-products
+✔ open source
+✔ verifiable
+✔ production-grade</pre>
+    </div>
+  </div>
+</section>
+
+<section id="platforms" class="reveal">
+  <div class="container grid">
+    <div class="card"><h3>AI Infrastructure</h3><p>Sandboxed, GPU-aware execution.</p></div>
+    <div class="card"><h3>Blockchain Systems</h3><p>Wallets, compliance, transparency.</p></div>
+    <div class="card"><h3>Trust & Verification</h3><p>KYC, auditability, policy enforcement.</p></div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <div class="container grid">
+    <div class="card"><h3>Solana KYC SDK</h3><p>On-chain compliance.</p></div>
+    <div class="card"><h3>HustleGPT</h3><p>AI PaaS infrastructure.</p></div>
+    <div class="card"><h3>OpenGrantStack</h3><p>Transparent grant systems.</p></div>
+  </div>
+</section>
+
+<section id="principles" class="reveal">
+  <div class="container grid">
+    <div class="card"><h3>Open by Default</h3></div>
+    <div class="card"><h3>Security First</h3></div>
+    <div class="card"><h3>Systems Thinking</h3></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    GitDigital Products • Open • Public • Actively Built
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(r => observer.observe(r));
+
+  // Card glow tracking
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--x', `${e.clientX - r.left}px`);
+      card.style.setProperty('--y', `${e.clientY - r.top}px`);
+    });
+  });
+</script>
+
+</body>
+</html>      font-weight: 700;
     }
 
     /* Hero */
