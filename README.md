@@ -1,4 +1,4 @@
-```markdown
+markdown
 <!-- Security Badges -->
 ![Security Foundational](https://img.shields.io/badge/security-foundational-blue)
 
@@ -7,8 +7,8 @@
 
 <!-- Technology Badges -->
 ![License](https://img.shields.io/badge/license-MIT-yellow)
-```
-```markdown
+
+markdown
 <!-- Security Badges -->
 ![Security Foundational](https://img.shields.io/badge/security-foundational-blue)
 ![Security Scanning](https://img.shields.io/badge/security-scanning-inactive-red)
@@ -71,7 +71,7 @@ jobs:
 ```
 
 
-```markdown
+markdown
 <!-- Security Badges -->
 ![Security Foundational](https://img.shields.io/badge/security-foundational-blue)
 
@@ -80,10 +80,10 @@ jobs:
 
 <!-- Technology Badges -->
 ![License](https://img.shields.io/badge/license-MIT-yellow)
-```
 
 
-```markdown
+
+markdown
 <!-- Security Badges -->
 ![Security Foundational](https://img.shields.io/badge/security-foundational-blue)
 ![Security Scanning](https://img.shields.io/badge/security-scanning-active-green)
@@ -110,7 +110,7 @@ jobs:
 
 <!-- Community Badges -->
 ![License](https://img.shields.io/badge/license-MIT-yellow)
-```
+
 
 
 
@@ -162,3 +162,53 @@ Transparent grant tracking, wallets, and audit trails for public trust.
 Public • Open Source • Actively Maintained
 
 GitDigital Products exists to build durable software for a complicated world.
+# 👋 Welcome to GitDigital Products
+
+We are a team building high-quality, innovative digital products on **Solana**. Our mission is to leverage modern technology—including AI and automation—to create seamless, intuitive, and impactful user experiences.
+
+![[CI]](https://github.com/Gitdigital-products/.github/actions/workflows/ci.yml/badge.svg) ![[License]](https://img.shields.io/github/license/Gitdigital-products/.github) ![[Python]](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white) ![[Stars]](https://img.shields.io/github/stars/Gitdigital-products)
+
+---
+
+## 🟣 The GitDigital Ecosystem on Solana
+
+We build open-source and proprietary tools to accelerate development on Solana. Here are our core focus areas:
+
+*   **🧠 RepoSync AI**: Solana-aligned repo automation, syncing, and structure enforcement.
+*   **📈 GrowthFlow**: Analytics, contributor insights, and growth engines for Solana projects.
+*   **🚀 LaunchFlow**: Deployment automation and Solana-native environment management.
+*   **💼 HustleGPT**: AI-powered business logic and operational intelligence for builders.
+*   **🔧 Config Hub**: Centralized configuration, templates, and standards across our ecosystem.
+*   **🔐 Solana KYC Compliance SDK**: Open-source SDK for enforcing KYC/AML at the token level using Solana Token Extensions.
+
+![[Solana Gradient Divider]]
+
+## 📊 Organization at a Glance
+
+| Feature | Description |
+| :--- | :--- |
+| **AI-Native Automation** | Many repos designed to self-maintain, audit, and update. |
+| **Solana-Aligned** | Built for high-speed, low-latency, decentralized workflows. |
+| **Unified Standards** | Consistent templates and governance across all projects. |
+| **Contributor-Friendly** | Clear documentation, expectations, and onboarding paths. |
+| **Scalable Ecosystem** | Infrastructure designed to grow with the Solana developer base. |
+
+## 🤝 Get Involved
+
+We thrive on community! Here’s how you can contribute:
+
+1.  **Explore Our Repos**: Check out the pinned repositories below—they are the heart of what we do.
+2.  **Report Issues**: Found a bug or have an idea? Open an issue in the relevant project repository.
+3.  **Contribute Code**: Review our [Contributing Guidelines]([PLACEHOLDER: Link to your CONTRIBUTING.md file]) before submitting a Pull Request.
+
+## 📚 Resources & Navigation
+
+*   **Main Website**: [https://gitdigital-products.github.io/gitdigital-products.io](https://gitdigital-products.github.io/gitdigital-products.io)
+*   **GitHub Organization**: [https://github.com/Gitdigital-products](https://github.com/Gitdigital-products)
+*   **Documentation**: [Coming Soon]
+*   **Support Portal**: [Coming Soon]
+
+![[Solana Wave Outro]]
+
+---
+⚡ **GitDigital Products — Automate Everything. Build on Solana.**
