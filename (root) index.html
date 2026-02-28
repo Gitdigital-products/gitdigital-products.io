@@ -1,5 +1,395 @@
 File 1: index.html (Main Homepage)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitDigital Products · Build on Solana</title>
+    <!-- Simple, modern styling inspired by Solana branding -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0b0e 0%, #1a1f2e 100%);
+            color: #e0e0ff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 0 2rem;
+            border-bottom: 2px solid #9945FF;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #9945FF, #14F195);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            color: #aaaaff;
+            letter-spacing: 1px;
+        }
+        .badges {
+            margin: 2rem 0;
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #1e1e3f;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            border: 1px solid #9945FF;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #e0e0ff;
+        }
+        .ecosystem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin: 3rem 0;
+        }
+        .card {
+            background: rgba(20, 30, 50, 0.6);
+            backdrop-filter: blur(5px);
+            border: 1px solid #2a2a5a;
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #14F195;
+        }
+        .card h3 {
+            color: #14F195;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            color: #b0b0ff;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background: #0a0a1a;
+            padding: 2rem;
+            border-radius: 40px;
+            margin: 3rem 0;
+            border: 1px solid #9945FF;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #14F195;
+        }
+        .stat-label {
+            color: #aaaaff;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid #2a2a5a;
+            margin-top: 3rem;
+            color: #6666aa;
+        }
+        .footer a {
+            color: #14F195;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitDigital Products</h1>
+            <div class="tagline">Solana‑Native · AI‑Driven · Automation‑First</div>
+            <div class="badges">
+                <span class="badge">🧠 RepoSync AI</span>
+                <span class="badge">📈 GrowthFlow</span>
+                <span class="badge">🚀 LaunchFlow</span>
+                <span class="badge">💼 HustleGPT</span>
+                <span class="badge">🔧 Config Hub</span>
+                <span class="badge">🔐 KYC Compliance SDK</span>
+            </div>
+        </header>
 
+        <section>
+            <h2 style="color: #9945FF; margin-bottom: 2rem;">🌐 The GitDigital Ecosystem</h2>
+            <div class="ecosystem-grid">
+                <div class="card">
+                    <h3>RepoSync AI</h3>
+                    <p>Solana‑aligned repo automation, syncing, structure enforcement, and lifecycle intelligence.</p>
+                </div>
+                <div class="card">
+                    <h3>GrowthFlow</h3>
+                    <p>Analytics, contributor insights, and automated growth engines for Solana‑based projects.</p>
+                </div>
+                <div class="card">
+                    <h3>LaunchFlow</h3>
+                    <p>Deployment automation, release orchestration, and Solana‑native environment management.</p>
+                </div>
+                <div class="card">
+                    <h3>HustleGPT</h3>
+                    <p>AI‑powered business logic, automation, and operational intelligence for Solana builders.</p>
+                </div>
+                <div class="card">
+                    <h3>Config Hub</h3>
+                    <p>Centralized configuration, templates, and shared standards across the GitDigital ecosystem.</p>
+                </div>
+                <div class="card">
+                    <h3>Solana KYC SDK</h3>
+                    <p>Open‑source SDK for enforcing KYC/AML at the token level using Solana Token Extensions.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">147+</div>
+                <div class="stat-label">Repositories</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Solana‑Native</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">AI Automation</div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>⚡ Automate Everything. Build on Solana.</p>
+            <p style="margin-top: 1.5rem;">
+                <a href="https://github.com/Gitdigital-products">GitHub</a> ·
+                <a href="#">Documentation (Coming Soon)</a> ·
+                <a href="#">Support</a>
+            </p>
+            <p style="margin-top: 2rem; font-size: 0.8rem;">© GitDigital Products. Open source, community first.</p>
+        </footer>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitDigital Products · Build on Solana</title>
+    <!-- Simple, modern styling inspired by Solana branding -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0b0e 0%, #1a1f2e 100%);
+            color: #e0e0ff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 0 2rem;
+            border-bottom: 2px solid #9945FF;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #9945FF, #14F195);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            color: #aaaaff;
+            letter-spacing: 1px;
+        }
+        .badges {
+            margin: 2rem 0;
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #1e1e3f;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            border: 1px solid #9945FF;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #e0e0ff;
+        }
+        .ecosystem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin: 3rem 0;
+        }
+        .card {
+            background: rgba(20, 30, 50, 0.6);
+            backdrop-filter: blur(5px);
+            border: 1px solid #2a2a5a;
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #14F195;
+        }
+        .card h3 {
+            color: #14F195;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            color: #b0b0ff;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background: #0a0a1a;
+            padding: 2rem;
+            border-radius: 40px;
+            margin: 3rem 0;
+            border: 1px solid #9945FF;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #14F195;
+        }
+        .stat-label {
+            color: #aaaaff;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+        .footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid #2a2a5a;
+            margin-top: 3rem;
+            color: #6666aa;
+        }
+        .footer a {
+            color: #14F195;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitDigital Products</h1>
+            <div class="tagline">Solana‑Native · AI‑Driven · Automation‑First</div>
+            <div class="badges">
+                <span class="badge">🧠 RepoSync AI</span>
+                <span class="badge">📈 GrowthFlow</span>
+                <span class="badge">🚀 LaunchFlow</span>
+                <span class="badge">💼 HustleGPT</span>
+                <span class="badge">🔧 Config Hub</span>
+                <span class="badge">🔐 KYC Compliance SDK</span>
+            </div>
+        </header>
+
+        <section>
+            <h2 style="color: #9945FF; margin-bottom: 2rem;">🌐 The GitDigital Ecosystem</h2>
+            <div class="ecosystem-grid">
+                <div class="card">
+                    <h3>RepoSync AI</h3>
+                    <p>Solana‑aligned repo automation, syncing, structure enforcement, and lifecycle intelligence.</p>
+                </div>
+                <div class="card">
+                    <h3>GrowthFlow</h3>
+                    <p>Analytics, contributor insights, and automated growth engines for Solana‑based projects.</p>
+                </div>
+                <div class="card">
+                    <h3>LaunchFlow</h3>
+                    <p>Deployment automation, release orchestration, and Solana‑native environment management.</p>
+                </div>
+                <div class="card">
+                    <h3>HustleGPT</h3>
+                    <p>AI‑powered business logic, automation, and operational intelligence for Solana builders.</p>
+                </div>
+                <div class="card">
+                    <h3>Config Hub</h3>
+                    <p>Centralized configuration, templates, and shared standards across the GitDigital ecosystem.</p>
+                </div>
+                <div class="card">
+                    <h3>Solana KYC SDK</h3>
+                    <p>Open‑source SDK for enforcing KYC/AML at the token level using Solana Token Extensions.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">147+</div>
+                <div class="stat-label">Repositories</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Solana‑Native</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">AI Automation</div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>⚡ Automate Everything. Build on Solana.</p>
+            <p style="margin-top: 1.5rem;">
+                <a href="https://github.com/Gitdigital-products">GitHub</a> ·
+                <a href="#">Documentation (Coming Soon)</a> ·
+                <a href="#">Support</a>
+            </p>
+            <p style="margin-top: 2rem; font-size: 0.8rem;">© GitDigital Products. Open source, community first.</p>
+        </footer>
+    </div>
+</body>
+</html>
 ```html
 <!DOCTYPE html>
 <html lang="en">
